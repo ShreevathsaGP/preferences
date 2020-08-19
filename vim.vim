@@ -2,6 +2,7 @@ syntax on
 
 " Defaults
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+set belloff=all
 set colorcolumn=120
 set expandtab
 set hlsearch
@@ -16,6 +17,7 @@ set relativenumber
 set shiftwidth=4
 set smartcase
 set smartindent
+set t_vb=
 set tabstop=4 softtabstop=4
 set title
 set undodir=~/.vim/undodir
@@ -24,6 +26,7 @@ set undofile
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'bps/vim-textobj-python' " functions & classes in Python
 Plug 'christoomey/vim-sort-motion' " gs {built-in-commands}
 Plug 'christoomey/vim-system-copy' " cp {built-in-commands}
 Plug 'christoomey/vim-titlecase' " gt {built-in-commands}
@@ -35,7 +38,6 @@ Plug 'morhetz/gruvbox' " colorscheme gruvbox
 Plug 'scrooloose/nerdtree' " <leader> pv
 Plug 'tpope/vim-commentary' " gc {built-in-commands} 
 Plug 'tpope/vim-surround' " cs {built-in-commands}
-Plug 'bps/vim-textobj-python' " functions & classes in Python
 
 call plug#end()
 
