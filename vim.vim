@@ -28,6 +28,7 @@ Plug 'morhetz/gruvbox'
 Plug 'kien/ctrlp.vim'
 Plug 'mbbill/undotree'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
