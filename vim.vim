@@ -30,7 +30,8 @@ Plug 'bps/vim-textobj-python' " functions & classes in Python
 Plug 'christoomey/vim-sort-motion' " gs {built-in-commands}
 Plug 'christoomey/vim-system-copy' " cp {built-in-commands}
 Plug 'christoomey/vim-titlecase' " gt {built-in-commands}
-Plug 'kana/vim-textobj-function' " functions in C | Java | Vim
+Plug 'jiangmiao/auto-pairs' " auto-pair (No commands)
+Plug 'kana/vim-textobj-function' " functions in C | C++ | Java | Vim
 Plug 'kana/vim-textobj-user' " Dependency fo all other text objects
 Plug 'kien/ctrlp.vim' " Ctrl + p
 Plug 'mbbill/undotree' " <leader> u
@@ -55,9 +56,9 @@ let mapleader = " "
 nnoremap <leader>+ :vertical resize +5<CR>
 nnoremap <leader>- :vertical resize -5<CR>
 nnoremap <leader>fq :q!<CR>
-nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>h+ :resize +5<CR>
 nnoremap <leader>h- :resize -5<CR>
+nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
