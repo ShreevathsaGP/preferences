@@ -18,7 +18,7 @@ set shiftwidth=4
 set smartcase
 set smartindent
 set t_vb=
-set tabstop=4 "softtabstop=4 " disabled because of vim-processing
+set tabstop=4 "softtabstop=4
 set title
 set undodir=~/.vim/undodir
 set undofile
