@@ -18,7 +18,7 @@ set shiftwidth=4
 set smartcase
 set smartindent
 set t_vb=
-set tabstop=4 softtabstop=4
+set tabstop=4 "softtabstop=4 " disabled because of vim-processing
 set title
 set undodir=~/.vim/undodir
 set undofile
@@ -37,6 +37,7 @@ Plug 'kien/ctrlp.vim' " Ctrl + p
 Plug 'mbbill/undotree' " <leader> u
 Plug 'morhetz/gruvbox' " colorscheme gruvbox
 Plug 'scrooloose/nerdtree' " <leader> pv
+Plug 'sophacles/vim-processing' " processing java
 Plug 'tpope/vim-commentary' " gc {built-in-commands} 
 Plug 'tpope/vim-surround' " cs {built-in-commands}
 
@@ -65,3 +66,4 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>pv :NERDTree<bar> :vertical resize 30<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>x :x<CR>
+nnoremap <leader>m :make<CR>
