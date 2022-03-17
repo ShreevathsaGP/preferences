@@ -52,13 +52,19 @@ colorscheme gruvbox
 let g:ctrlp_use_caching = 0
 let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+" Custom Commands
+command! W :w
+command! Q :q
+command! Wq :wq
+command! WQ :wq
+
 " Key Remaps
 let mapleader = " "
-nnoremap <leader>+ :vertical resize +5<CR>
-nnoremap <leader>- :vertical resize -5<CR>
+nnoremap <leader>= :resize +5<CR>
+nnoremap <leader>- :resize -5<CR>
 nnoremap <leader>fq :q!<CR>
-nnoremap <leader>h+ :resize +5<CR>
-nnoremap <leader>h- :resize -5<CR>
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>_ :vertical resize -5<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
