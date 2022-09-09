@@ -52,6 +52,20 @@ colorscheme gruvbox
 let g:ctrlp_use_caching = 0
 let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+" Word Count
+let g:word_count=wordcount().words
+function WordCount()
+    if has_key(wordcount(),'visual_words')
+        let g:word_count=wordcount().visual_words."/".wordcount().words " count selected words
+    else
+        let g:word_count=wordcount().cursor_words."/".wordcount().words " or shows words 'so far'
+    endif
+    return g:word_count
+endfunction
+
+set statusline+=\ word:\ \%{WordCount()}
+set laststatus=2 " show the statusline
+
 " Custom Commands
 command! W :w
 command! Q :q
@@ -73,3 +87,5 @@ nnoremap <leader>pv :NERDTree<bar> :vertical resize 30<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>m :make<CR>
+nnoremap <leader>e :edit<CR>
+
