@@ -26,6 +26,7 @@ set undofile
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'dart-lang/dart-vim-plugin' " dart and flutter
 Plug 'bps/vim-textobj-python' " functions & classes in Python
 Plug 'christoomey/vim-sort-motion' " gs {built-in-commands}
 Plug 'christoomey/vim-system-copy' " cp {built-in-commands}
@@ -88,4 +89,3 @@ nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>m :make<CR>
 nnoremap <leader>e :edit<CR>
-
