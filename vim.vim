@@ -41,6 +41,7 @@ Plug 'scrooloose/nerdtree' " <leader> pv
 Plug 'sophacles/vim-processing' " processing java
 Plug 'tpope/vim-commentary' " gc {built-in-commands} 
 Plug 'tpope/vim-surround' " cs {built-in-commands}
+Plug 'vim-ruby/vim-ruby' " ruby syntax highlighting
 
 call plug#end()
 
@@ -89,3 +90,7 @@ nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>x :x<CR>
 nnoremap <leader>m :make<CR>
 nnoremap <leader>e :edit<CR>
+
+" Visual Mode Remaps
+let mapleader = ","
+vnoremap <leader>s :<C-U>'<,'> ! awk '{ print length(), $0 <bar> "sort -n <bar> cut -d\\  -f2-" }'<CR>
