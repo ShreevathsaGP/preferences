@@ -76,20 +76,22 @@ command! WQ :wq
 
 " Key Remaps
 let mapleader = " "
-nnoremap <leader>= :resize +5<CR>
-nnoremap <leader>- :resize -5<CR>
+nnoremap <leader>t =G<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>c :noh<CR>
 nnoremap <leader>fq :q!<CR>
-nnoremap <leader>+ :vertical resize +5<CR>
-nnoremap <leader>_ :vertical resize -5<CR>
+nnoremap <leader>e :edit<CR>
+nnoremap <leader>m :make<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>pv :NERDTree<bar> :vertical resize 30<CR>
+nnoremap <leader>- :resize -5<CR>
+nnoremap <leader>= :resize +5<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>x :x<CR>
-nnoremap <leader>m :make<CR>
-nnoremap <leader>e :edit<CR>
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>_ :vertical resize -5<CR>
+nnoremap <leader>pv :NERDTree<bar> :vertical resize 30<CR>
 
 " Visual Mode Remaps
 let mapleader = ","
