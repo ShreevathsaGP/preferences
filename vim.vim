@@ -91,7 +91,12 @@ nnoremap <leader>= :resize +5<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>+ :vertical resize +5<CR>
 nnoremap <leader>_ :vertical resize -5<CR>
+nnoremap <leader>s <C-w>=<CR>
 nnoremap <leader>pv :NERDTree<bar> :vertical resize 30<CR>
+nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
+nnoremap <leader>tl :tabn<CR>
+nnoremap <leader>th :tabp<CR>
 
 " Visual Mode Remaps
 let mapleader = ","
